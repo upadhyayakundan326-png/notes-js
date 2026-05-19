@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+    
+</body>
+</html>
+<script>
+   let orange=  document.querySelector("#orange")
+    let green=document.querySelector("#green")
+    function changer(color){
+        function magic(){
+            document.body.style.backgroundColor=`${color}`
+        }
+        return magic;
+    }
+    orange.onclick=changer("orange")
+    green.onclick=changer("green")
+</script>
